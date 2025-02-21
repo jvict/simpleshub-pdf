@@ -2,22 +2,22 @@
 
 ## Project setup
 ```
-yarn install
+yarn install ou npm install
 ```
 
-### Compiles and hot-reloads for development
+## Backend
 ```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
+cd backend && yarn ou npm install
 ```
 
-### Lints and fixes files
+## Run Backend
 ```
-yarn lint
+yarn start ou npm start
+```
+
+### Return for Front-endCompiles and hot-reloads for development
+```
+cd .. && yarn serve
 ```
 
 ### Customize configuration
