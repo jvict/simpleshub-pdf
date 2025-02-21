@@ -15,7 +15,7 @@ cd backend && yarn ou npm install
 yarn start ou npm start
 ```
 
-### Return for Front-endCompiles and hot-reloads for development
+### Return for Front-end Compiles and hot-reloads for development
 ```
 cd .. && yarn serve
 ```

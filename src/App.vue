@@ -1,8 +1,16 @@
 <template>
   <div id="app">
-    <h1>CPF Finder</h1>
-    <UploadForm @upload-success="fetchCPFs" />
-    <CPFList :cpfs="cpfs" />
+    <h1>Finder CPF in PDF</h1>
+    <div class="content">
+
+      <div class="left-panel">
+        <UploadForm @upload-success="fetchCPFs" />
+      </div>
+
+      <div class="right-panel">
+        <CPFList :cpfs="cpfs" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -40,13 +48,43 @@ export default {
 <style lang="scss">
 #app {
   font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  background-color: #000;
+  padding: 0;
+  margin: 0;
 
-h1 {
-  text-align: center;
-  color: #2c3e50;
+  h1 {
+    font-size: 24px;
+    background-color: #70e000;
+    padding: 10px 0;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    justify-content: space-between;
+    gap: 20px;
+
+    .right-panel {
+      flex: 1;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .left-panel {
+      border-right: 2px solid #70e000;
+    }
+  }
 }
 </style>

@@ -1,4 +1,6 @@
 import { PDFExtract } from 'pdf.js-extract';
+import Logger from "../config/Logger.js";
+const logger = new Logger();
 
 const pdfExtract = new PDFExtract();
 const options = {}; // see below for options
@@ -13,7 +15,7 @@ function extractCPFs(filePath) {
           resolve(cpfs);
         })
         .catch(error => {
-          reject(new Error(`Erro ao processar o PDF: ${error.message}`));
+          logger.error(`Erro ao processar o PDF: ${error.message}`);
         });
     });
   }
