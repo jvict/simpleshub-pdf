@@ -8,7 +8,7 @@
       </div>
 
       <div class="right-panel">
-        <CPFList :cpfs="cpfs" />
+        <CPFList :cpfs="cpfs" :onButtonClick="fetchCPFs" />
       </div>
     </div>
   </div>

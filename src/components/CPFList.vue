@@ -4,6 +4,8 @@
     <ul>
       <li v-for="cpf in paginatedCPFs" :key="cpf">{{ cpf }}</li>
     </ul>
+
+    <button @click="onButtonClick"> Get CPFs</button>
     
     <div class="pagination">
       <button 
@@ -27,6 +29,10 @@ export default {
   props: {
     cpfs: {
       type: Array,
+      required: true
+    },
+    onButtonClick: {
+      type: Function,
       required: true
     }
   },
