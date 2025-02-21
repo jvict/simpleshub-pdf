@@ -1,0 +1,14 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.upload-form {
+    margin-bottom: 20px;
+    
+    input[type="file"] {
+      margin-right: 10px;
+    }
+  
+    button {
+      @include button-style;
+    }
+  }
