@@ -20,5 +20,11 @@ yarn start ou npm start
 cd .. && yarn serve
 ```
 
+### Change value to .env in folder backend
+```
+FIREBASE_PRIVATE_KEY_ID=
+FIREBASE_PRIVATE_KEY=
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
